@@ -10,7 +10,7 @@ public record Driver(String firstName, String lastName, String licenseNumber){
             throw new IllegalArgumentException("Incorrect name");
         if(!Utils.checkString(licenseNumber))
             throw new IllegalArgumentException("Empty licenseNumber");
-        if(!Utils.checkString(licenseNumber))
-            throw new IllegalArgumentException("Empty licenseNumber");
+//        if(!Utils.checkString(licenseNumber))
+//            throw new IllegalArgumentException("Empty licenseNumber");
     }
 }
