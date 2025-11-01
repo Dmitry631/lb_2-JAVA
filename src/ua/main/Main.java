@@ -6,12 +6,14 @@ import java.lang.classfile.instruction.SwitchCase;
 
 public class Main {
     public static void main(String[] argv){
-        showClasses();
+//        showClasses();
 
         Vehicle vehicle = new Vehicle("AE0606EA", "Scania", 3);
         Route route = new Route("KR", "CH", 867);
         Shipment shipment = new Shipment(vehicle, route, "cargo", Status.IN_TRANSIT, "20.03.2025");
         showSwitch(shipment);
+        Shipment shipment2 = new Shipment(vehicle, route, "cargo", Status.DELIVERED, "20.03.2025");
+        showSwitch(shipment2);
 
 //        showErrors();
     }
